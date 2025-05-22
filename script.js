@@ -1,7 +1,7 @@
 import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm";
 
-const supabaseUrl = "https://YOUR_PROJECT_ID.supabase.co";
-const supabaseKey = "YOUR_PUBLIC_API_KEY";
+const supabaseUrl = "https://nuhzrylyfakrsopxywlc.supabase.co";
+const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im51aHpyeWx5ZmFrcnNvcHh5d2xjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDc5MzY3MTUsImV4cCI6MjA2MzUxMjcxNX0.gCQUlsfWuO16aewHAzieIFGCKMzi3MvJIVnwlyCMI9c";
 const bucketName = "media";
 
 const supabase = createClient(supabaseUrl, supabaseKey);
