@@ -2,6 +2,7 @@
 // Подключение к Supabase
 const SUPABASE_URL = 'https://nuhzrylyfakrsopxywlc.supabase.co';
 const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im51aHpyeWx5ZmFrcnNvcHh5d2xjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDc5MzY3MTUsImV4cCI6MjA2MzUxMjcxNX0.gCQUlsfWuO16aewHAzieIFGCKMzi3MvJIVnwlyCMI9c';
+const bucketName = 'media';
 
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
 
