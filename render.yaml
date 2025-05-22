@@ -1,0 +1,15 @@
+
+services:
+  - type: web
+    name: fotovivo-backend
+    runtime: node
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: SUPABASE_URL
+        value: your-supabase-url-here
+      - key: SUPABASE_KEY
+        value: your-supabase-anon-key-here
+      - key: BUCKET_NAME
+        value: media
+    plan: free
