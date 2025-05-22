@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FotoVivo: Оживающие фотографии</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <h1>Добро пожаловать в FotoVivo</h1>
+    <p>Загрузите фото и видео, чтобы создать оживающее воспоминание с QR-кодом.</p>
+    <input type="file" id="photoInput" accept="image/*"><br>
+    <input type="file" id="videoInput" accept="video/*"><br>
+    <button onclick="generateQR()">Создать QR-код</button>
+    <div id="preview"></div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
