@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AR View</title>
+</head>
+<body>
+    <div id="output">
+        <h1>Просмотр AR-фотографии</h1>
+        <img id="photo" style="max-width: 100%;"><br>
+        <video id="video" controls style="max-width: 100%;"></video>
+    </div>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const ref = params.get('ref');
+        if (ref && localStorage.getItem(ref)) {
+            const data = JSON.parse(localStorage.getItem(ref));
+            document.getElementById('photo').src = data.photo;
+            document.getElementById('video').src = data.video;
+        } else {
+            document.getElementById('output').innerText = 'Данные не найдены.';
+        }
+    </script>
+</body>
+</html>
