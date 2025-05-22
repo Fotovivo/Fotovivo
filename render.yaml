@@ -6,10 +6,10 @@ services:
     buildCommand: npm install
     startCommand: node server.js
     envVars:
-      - key: SUPABASE_URL
-        value: your-supabase-url-here
-      - key: SUPABASE_KEY
-        value: your-supabase-anon-key-here
-      - key: BUCKET_NAME
+      - key: SUPABASE_URL 
+        value: https://nuhzrylyfakrsopxywlc.supabase.co
+      - key: SUPABASE_KEY 
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im51aHpyeWx5ZmFrcnNvcHh5d2xjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDc5MzY3MTUsImV4cCI6MjA2MzUxMjcxNX0.gCQUlsfWuO16aewHAzieIFGCKMzi3MvJIVnwlyCMI9c
+      - key: BUCKET_NAME 
         value: media
     plan: free
