@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FotoVivo — AR Фото</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="favicon.png"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Создай свою AR-фотографию</h1>
+    <form id="uploadForm">
+      <label>Фото:
+        <input type="file" id="photoInput" accept="image/*" required />
+      </label>
+      <label>Видео:
+        <input type="file" id="videoInput" accept="video/mp4,video/quicktime" required />
+      </label>
+      <small id="videoSizeLabel"></small>
+      <label>Название:
+        <input type="text" id="title" placeholder="Например, Папе на память" required />
+      </label>
+      <label>Описание:
+        <textarea id="description" rows="2" placeholder="Несколько тёплых слов..."></textarea>
+      </label>
+      <button type="submit">Создать AR-фотографию</button>
+    </form>
+    <canvas id="qrCanvas"></canvas>
+    <p id="status"></p>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.1/build/qrcode.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

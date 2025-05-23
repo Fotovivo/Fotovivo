@@ -1,0 +1,28 @@
+
+body {
+  font-family: sans-serif;
+  background: #f8f8f8;
+  margin: 0;
+  padding: 2rem;
+}
+.container {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+label {
+  display: block;
+  margin: 1rem 0 0.5rem;
+}
+input, textarea, button {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.2rem;
+}
+canvas {
+  margin-top: 1rem;
+  display: block;
+}
